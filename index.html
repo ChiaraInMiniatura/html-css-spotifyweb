@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/globals.css">
   <link rel="stylesheet" href="./css/utils.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -12,12 +13,66 @@
 <body>
   <main class="d-flex wrap">
 
-    <aside class="menu-nero d-flex w200 debug ">
+    <aside class="menu-nero d-flex">
 
-      <div class="logo debug h70 w100">logo</div>
-      <div class="home debug h100 w100">home</div>
-      <div class="playlist debug h200 w100">playlist </div>
-      <div class="utente debug h100 w100">utente fisso in basso</div>
+      <div class="menu-up">
+        <div class="box-logo d-flex h70 w100">
+          <img class="logo-big" src="./img/logo.svg" alt="logo">
+          <img class="logo-small" src="./img/logo-small.svg" alt="logo">
+        </div>
+  
+        <div class="home w100">
+  
+          <div class="icon">
+            <img src="./img/home.svg" alt="home">
+            <span>Home</span>
+          </div>
+          <div class="icon">
+            <img src="./img/search.svg" alt="cerca">
+            <span>Cerca</span>
+          </div>
+          <div class="icon">
+            <img src="./img/libreria.svg" alt="libreria">
+            <span>La tua libreria</span>
+          </div>
+  
+        </div>
+  
+        <div class="playlist w100"> 
+  
+          <h3>PLAYLIST</h3>
+          <span><i class="fa-solid fa-square-plus"></i> Crea Playlist</span>
+          <p>Nome Playlist</p>
+          <p>Nome Playlist</p>
+          <p>Nome Playlist</p>
+          <p>Nome Playlist</p>
+          <p>Nome Playlist</p>
+          <p>Nome Playlist</p>
+          <p>Nome Playlist</p>
+    
+        </div>
+
+      </div>
+
+      <div class="menu-down">
+
+        <div class="utente h100 w100">
+
+          <div class="icon">
+            <p><i class="fa-solid fa-circle-arrow-down"></i>
+              <span>Installa app</span>
+            </p>
+          </div>
+          <div class="linea"></div>
+          <div class="icon">
+            <p><i class="fa-solid fa-circle-user"></i> <span class="name">Jonh Done</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      
+
     </aside>
 
     <div class="container debug">

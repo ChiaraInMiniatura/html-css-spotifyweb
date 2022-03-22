@@ -5,13 +5,17 @@
 .wrap{
   flex-wrap: wrap;
 }
+/* altezze */
 
-.w100{
-  width: 100%;
+.h70{
+  height: 70px;
 }
 
 /* larghezze */
 
+.w100{
+  width: 100%;
+}
 
 .w200{
   width: 200px;
@@ -26,7 +30,7 @@
   border: 1px solid rgb(245, 245, 245);
 }
 .h70{
-  min-height: 70px;
+  height: 70px;
 }
 .h100{
   min-height: 100px;
@@ -37,12 +41,4 @@
 .h300{
   min-height: 300px;
 }
-.h500{
-  min-height: 500px;
-}
-.h700{
-  min-height: 700px;
-}
-.vh100{
-  height: 100vh;
-}
+
