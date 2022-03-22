@@ -1,0 +1,30 @@
+
+.container{
+  width: calc(100% - 200px);
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.upgrade{
+  position: fixed;
+}
+.menu-orizzontale{
+  justify-content: center;
+  padding-top: 70px;
+}
+.box-img{
+  width: calc(100vw/6 - 60px);
+  height: calc(100vw/6 - 60px);
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
+}
+.menu-nero{
+  height: calc(100vh - 100px);
+  flex-direction: column;
+}
+
+.player{
+  justify-content: space-between;
+}
