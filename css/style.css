@@ -148,12 +148,21 @@
 /* sezione immagini */
 .tit-sezioni{
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom:20px 10px;
+}
+
+.tit-sezioni h1{
+  padding-bottom: 10px;
 }
 
 .cover{
+  width: calc(100%/6);
+  min-width: 130px;
+  min-height: 100px;
+  max-width: 200px;
   text-align: center;
-  padding: 7px
+  padding: 10px;
+  margin:5px;
 }
 
 .cover h3{
@@ -162,15 +171,22 @@
 
 .cover p{
   color: grey;
+
 }
 
 .box-img{
-  width: calc(100vw/6 - 60px);
+  width: calc(100/6 - 60px);
   height: calc(100vw/6 - 60px);
+  margin: 5px;
   min-width: 100px;
   min-height: 100px;
   max-width: 200px;
   max-height: 200px;
+}
+
+
+.box-img.rotonda img{
+  border-radius: 50%;
 }
 
 /* PLAYER */
@@ -181,6 +197,29 @@
 
  
 /* MEDIA */
+
+@media screen and (max-width: 800px){
+  .cover{
+    width: calc(100%/4);
+  }
+  .box-img{
+    width: calc(100vw/4 - 60px);
+    height: calc(100vw/4 - 60px);
+  }
+    
+}
+
+@media screen and (max-width: 600px){
+  .cover{
+    width: calc(100%/2);
+  }
+  .box-img{
+    width: calc(100vw/2 - 60px);
+    height: calc(100vw/2 - 60px);
+  }
+    
+}
+
 
 @media screen and (max-width: 419px){
   .menu-nero{
@@ -209,5 +248,13 @@
   }
   .upgrade{
     width: calc(100vw - 50px);
+  }
+
+  .cover{
+    width: 100%;
+  }
+  .box-img{
+    width: calc(100vw - 60px);
+    height: calc(100vw - 60px);
   }
 }
