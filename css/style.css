@@ -193,11 +193,92 @@
 
 .player{
   justify-content: space-between;
+  background-color: rgb(40, 40, 40);
+}
+
+/* player-sx */
+.player-sx{
+  align-items: center;
+}
+
+.img-player{
+  width: 40px;
+  height: 40px;
+  margin:0 7px;
+}
+
+.pl-title{
+  margin-right: 10px;
+  
+}
+
+.like,.salva{
+  font-size: 15px;
+  padding: 5px;
+  color: rgb(124, 124, 124);
+}
+.pl-hv:hover{
+  color: white;
+}
+
+/* player centrale */
+
+.player-centre{
+  width: 40%;
+}
+.comandi-player{
+  font-size: 18px;
+  margin: 5px 0;
+  justify-content: center;
+  align-items:center ;
+}
+.comandi-player span{
+  margin: 0 10px;
+}
+.comandi-player .play{
+  font-size: 27px;
+}
+
+.barra-ripr{
+  justify-content: space-between;
+  font-size: 10px;
+}
+.barra-ripr .barra{
+  width: 80%;
+  height: 5px;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/* player-dx */
+.player-dx{
+  width: 200px;
+  font-size: 15px;
+  color: rgb(124, 124, 124);
+  align-items: center;
+}
+
+.icone-vol span{
+  margin: 0 5px;
+}
+
+.barra-vol{
+  width: 40%;
+  height: 5px;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.icone-vol span:hover{
+  color: white;
 }
 
  
 /* MEDIA */
 
+/* media tablet coricato */
 @media screen and (max-width: 800px){
   .cover{
     width: calc(100%/4);
@@ -209,18 +290,19 @@
     
 }
 
+/* media tablet */
 @media screen and (max-width: 600px){
   .cover{
-    width: calc(100%/2);
+    width: calc(100%/3);
   }
   .box-img{
-    width: calc(100vw/2 - 60px);
-    height: calc(100vw/2 - 60px);
+    width: calc(100vw/3 - 70px);
+    height: calc(100vw/3 - 70px);
   }
     
 }
 
-
+/* media cellulare */
 @media screen and (max-width: 419px){
   .menu-nero{
     width: 50px;
@@ -251,10 +333,29 @@
   }
 
   .cover{
-    width: 100%;
+    width: calc(100%/2 -50px);
   }
   .box-img{
-    width: calc(100vw - 60px);
-    height: calc(100vw - 60px);
+    width: calc(100vw/2 - 80px);
+    height: calc(100vw/2 - 80px);
   }
+
+  .player-sx .pl-title{
+    margin-right: 3px;
+  }
+
+  .player-centre{
+    width: 30%;
+  }
+  .comandi-player{
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .comandi-player span{
+    margin: 0 5px;
+  }
+  .comandi-player .play{
+    font-size: 25px;
+  }
+
 }
