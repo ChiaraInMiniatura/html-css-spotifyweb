@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/globals.css">
   <link rel="stylesheet" href="./css/utils.css">
@@ -12,121 +15,175 @@
 </head>
 <body>
 
-  <main class="d-flex wrap">
+  <div id="wrapper">
+    <main class="d-flex wrap">
 
-    <!-- menu nero -->
-
-    <aside class="menu-nero d-flex">
-
-      <div class="menu-up">
-        <div class="box-logo d-flex h70 w100">
-          <img class="logo-big" src="./img/logo.svg" alt="logo">
-          <img class="logo-small" src="./img/logo-small.svg" alt="logo">
-        </div>
+      <!-- menu nero -->
   
-        <div class="home w100">
+      <aside class="menu-nero d-flex">
   
-          <div class="icon">
-            <img src="./img/home.svg" alt="home">
-            <span>Home</span>
+        <div class="menu-up">
+          <div class="box-logo d-flex h70 w100">
+            <img class="logo-big" src="./img/logo.svg" alt="logo">
+            <img class="logo-small" src="./img/logo-small.svg" alt="logo">
           </div>
-          <div class="icon">
-            <img src="./img/search.svg" alt="cerca">
-            <span>Cerca</span>
-          </div>
-          <div class="icon">
-            <img src="./img/libreria.svg" alt="libreria">
-            <span>La tua libreria</span>
-          </div>
-  
-        </div>
-  
-        <div class="playlist w100"> 
-  
-          <h3>PLAYLIST</h3>
-          <span><i class="fa-solid fa-square-plus"></i> Crea Playlist</span>
-          <p>Nome Playlist</p>
-          <p>Nome Playlist</p>
-          <p>Nome Playlist</p>
-          <p>Nome Playlist</p>
-          <p>Nome Playlist</p>
-          <p>Nome Playlist</p>
-          <p>Nome Playlist</p>
     
-        </div>
-
-      </div>
-
-      <div class="menu-down">
-
-        <div class="utente h100 w100">
-
-          <div class="icon">
-            <p><i class="fa-solid fa-circle-arrow-down"></i>
-              <span>Installa app</span>
-            </p>
+          <div class="home w100">
+    
+            <div class="icon">
+              <img src="./img/home.svg" alt="home">
+              <span>Home</span>
+            </div>
+            <div class="icon">
+              <img src="./img/search.svg" alt="cerca">
+              <span>Cerca</span>
+            </div>
+            <div class="icon">
+              <img src="./img/libreria.svg" alt="libreria">
+              <span>La tua libreria</span>
+            </div>
+    
           </div>
-          <div class="linea"></div>
-          <div class="icon">
-            <p><i class="fa-solid fa-circle-user"></i> <span class="name">Jonh Done</span></p>
+    
+          <div class="playlist w100"> 
+    
+            <h3>PLAYLIST</h3>
+
+            <nav>
+              <ul>
+                <li>
+                  <a href="#"><span><i class="fa-solid fa-square-plus"></i> Crea Playlist</span></a>
+                </li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </nav>
+            <!-- <span><i class="fa-solid fa-square-plus"></i> Crea Playlist</span>
+            <p>Nome Playlist</p>
+            <p>Nome Playlist</p>
+            <p>Nome Playlist</p>
+            <p>Nome Playlist</p>
+            <p>Nome Playlist</p>
+            <p>Nome Playlist</p>
+            <p>Nome Playlist</p>
+       -->
+          </div>
+  
+        </div>
+  
+        <div class="menu-down">
+  
+          <div class="utente h100 w100">
+  
+            <div class="icon">
+              <p><i class="fa-solid fa-circle-arrow-down"></i>
+                <span>Installa app</span>
+              </p>
+            </div>
+            <div class="linea"></div>
+            <div class="icon">
+              <p><i class="fa-solid fa-circle-user"></i> <span class="name">Jonh Done</span></p>
+            </div>
+          </div>
+  
+        </div>
+  
+      </aside>
+      <!-- /menu nero -->
+  
+       <!-- parte centrale -->
+      <div class="container">
+  
+        <div class="upgrade d-flex h70">
+          <div class="btn-upgrade">
+            <a href="#">Effettua l'upgrade</a> 
           </div>
         </div>
-
-      </div>
-
-    </aside>
-    <!-- /menu nero -->
-
-     <!-- parte centrale -->
-    <div class="container">
-
-      <div class="upgrade d-flex h70">
-        <div class="btn-upgrade">
-          <a href="#">Effettua l'upgrade</a> 
+  
+        <div class="menu-orizzontale d-flex w100">
+          <nav>
+            <ul>
+              <li><a href="#">in evidenza</a>
+                <div class="active"></div>
+              </li>
+              <li><a href="#">podcast</a></li>
+              <li><a href="#">classifiche</a></li>
+              <li><a href="#">generi e mood</a></li>
+              <li><a href="#">nuove uscite</a></li>
+              <li><a href="#">scopri</a></li>
+            </ul>
+          </nav>
+          
         </div>
-      </div>
+        <div class="recenti d-flex wrap w100">
 
-      <div class="menu-orizzontale d-flex h200 w100">
-        <nav>
-          <ul>
-            <li><a href="#"></a>li</li>
-            <li><a href="#"></a>li</li>
-            <li><a href="#"></a>li</li>
-            <li><a href="#"></a>li</li>
-            <li><a href="#"></a>li</li>
-            <li><a href="#"></a>li</li>
-          </ul>
-        </nav>
+          <div class="tit-sezioni">
+            <h1>Recently played</h1>
+          </div>
+
+          <div class="cover">
+            <div class="box-img">
+              <img src="./img/metal_lifting.jpg" alt="cover">
+            </div>
+            <h3>Heavy Metal</h3>
+            <p>Subtitle</p>
+          </div>
+          <div class="cover debug">
+            <div class="box-img debug">
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="cover debug">
+            <div class="box-img debug">
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="cover debug">
+            <div class="box-img debug">
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="cover debug">
+            <div class="box-img debug">
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="cover debug">
+            <div class="box-img debug">
+              <img src="" alt="">
+            </div>
+          </div>
+          
+        
+        </div>
+        <div class="creato-per d-flex wrap debug h200 w100">creato per
+          <div class="box-img debug"></div>
+          <div class="box-img debug"></div>
+        </div>
+        <div class="artisti d-flex wrap debug h200 w100">artisti
+          <div class="box-img debug"></div>
+          <div class="box-img debug"></div>
+        </div>
         
       </div>
-      <div class="recenti d-flex wrap debug h200 w100">recenti
-        <div class="box-img debug"></div>
-        <div class="box-img debug"></div>
-        <div class="box-img debug"></div>
-        <div class="box-img debug"></div>
-        <div class="box-img debug"></div>
-        <div class="box-img debug"></div>
+      <!-- /parte centrale -->
+  
+      <!-- player -->
+      <div class="player d-flex debug w100 h70">
+        <div class="player-sx debug">sx</div>
+        <div class="player-centre debug">centro</div>
+        <div class="player-dx debug">dx</div>
       </div>
-      <div class="creato-per d-flex wrap debug h200 w100">creato per
-        <div class="box-img debug"></div>
-        <div class="box-img debug"></div>
-      </div>
-      <div class="artisti d-flex wrap debug h200 w100">artisti
-        <div class="box-img debug"></div>
-        <div class="box-img debug"></div>
-      </div>
-      
-    </div>
-    <!-- /parte centrale -->
+  
+    </main>
 
-    <!-- player -->
-    <div class="player d-flex debug w100 h70">
-      <div class="player-sx debug">sx</div>
-      <div class="player-centre debug">centro</div>
-      <div class="player-dx debug">dx</div>
-    </div>
-
-  </main>
+  </div>
+ 
 
 </body>
 </html>
