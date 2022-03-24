@@ -42,7 +42,7 @@
 
 /* playlist */
 .playlist{
-  height: 150px;
+  height: 40%;
   padding-left: 10px;
 }
 
@@ -50,6 +50,9 @@
   padding-bottom: 7px;
   list-style: none;
   margin: 0;
+}
+.nav-overflow ul{
+  padding: 0;
 }
 
 .playlist h3{
@@ -75,13 +78,14 @@
 }
 
 .nav-overflow{
-  height: 100px;
+  height: 80%;
   overflow: auto;
 }
 
 /* utente */
 .linea{
   width: 90%;
+  height: 20%;
   margin: 10px auto;
   background-color: grey;
   border: 1px solid grey;
@@ -104,7 +108,7 @@
   width: calc(100% - 200px);
   height: calc(100vh - 70px);
   overflow: auto;
-  padding: 10px;
+  
 }
 
 /* upgrade fixed */
@@ -114,6 +118,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: end;
   align-items: center;
+  z-index: 999;
 }
 
 .upgrade .btn-upgrade a{
@@ -136,24 +141,29 @@
   padding: 80px 0 30px 0;
 }
 
-.menu-orizzontale ul li a{
+.menu-orizzontale ul li {
   text-transform: uppercase;
   padding: 0 10px;
+  display: inline-block;
 }
 
 .active{
-  width: 30%;
+  width: 20px;
   height: 1px;
   margin:7px auto;
+  color: rgb(20, 25, 34);
+  border: 2px solid rgb(20, 25, 34) ;
+  border-radius: 2px;
+}
+.menu-orizzontale ul li:hover .active{ 
   color: lime;
   border: 2px solid lime ;
-  border-radius: 2px;
 }
 
 /* sezione immagini */
 .tit-sezioni{
   width: 100%;
-  padding-bottom:20px 10px;
+  padding:20px 10px;
 }
 
 .tit-sezioni h1{
