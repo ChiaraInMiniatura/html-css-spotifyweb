@@ -42,13 +42,13 @@
 
 /* playlist */
 .playlist{
-  overflow: auto;
   height: 150px;
   padding-left: 10px;
 }
 
-.playlist ul li a{
-  padding-bottom: 5px;
+.nav-overflow ul li{
+  padding-bottom: 7px;
+  list-style: none;
   margin: 0;
 }
 
@@ -72,6 +72,11 @@
 .playlist span:hover,
 .playlist li:hover a{
   color: white;
+}
+
+.nav-overflow{
+  height: 100px;
+  overflow: auto;
 }
 
 /* utente */
@@ -247,6 +252,9 @@
 .pl-hv:hover{
   color: white;
 }
+.nome-brano:hover{
+  text-decoration: underline;
+}
 
 /* player centrale */
 
@@ -254,6 +262,7 @@
   width: 40%;
 }
 .comandi-player{
+  height: 50%;
   font-size: 18px;
   margin: 5px 0;
   justify-content: center;
@@ -264,6 +273,9 @@
 }
 .comandi-player .play{
   font-size: 27px;
+}
+.comandi-player .play:hover{
+  font-size: 30px;
 }
 
 .barra-ripr{
@@ -347,7 +359,7 @@
   }
 
   .utente .fa-solid.fa-circle-arrow-down{
-    margin-left: 5px;
+    margin-left: 6px;
   }
 
   .container{
